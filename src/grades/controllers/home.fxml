@@ -1,0 +1,11 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:controller="grades.Home" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <VBox alignment="center">
+        <TextField fx:id="name" text="Enter your name:" onKeyPressed="#onEnter" />
+        <Button fx:id="enter" onAction="#onContinue" text="Continue" />
+    </VBox>
+</GridPane>

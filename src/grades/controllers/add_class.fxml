@@ -1,0 +1,18 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:controller="grades.AddClass" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <VBox alignment="center">
+        <Label fx:id="labelName" text="Name: " />
+        <TextField fx:id="name" />
+
+        <Label fx:id="labelUnits" text="Units (Enter Decimal): " />
+        <TextField fx:id="units" />
+
+        <Label fx:id="labelGrade" text="Grade (Enter Percent): " />
+        <TextField fx:id="grade" />
+
+        <Button fx:id="add" onAction="#addClass" text="Add Class" />
+    </VBox>
+</GridPane>
